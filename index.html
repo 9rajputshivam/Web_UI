@@ -1,102 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    background: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a252f;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Portfolio</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">I create amazing digital experiences</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-    </section>
-    <form action="http://go.demo.pardot.com/l/328763/2026-02-23/37sqm5" method="post">
+<header>
+    <h1>My Simple Website</h1>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer from Prayagraj, creating beautiful and functional websites. I love turning ideas into reality with clean code and modern design.</p>
-                    <div class="skills">
-                        <span>HTML/CSS</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>E-Commerce Site</h3>
-                    <p>Modern shopping platform with payment integration</p>
-                </div>
-                <div class="project-card">
-                    <h3>Weather App</h3>
-                    <p>Real-time weather dashboard with API integration</p>
-                </div>
-                <div class="project-card">
-                    <h3>Task Manager</h3>
-                    <p>Productive task management web application</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="home">
+    <div class="container">
+        <h2>Welcome</h2>
+        <p>This is a small responsive website UI with a contact form.</p>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We build simple and clean web interfaces for learning and demo purposes.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <div class="form-card">
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <button type="submit">Submit</button>
+
             </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Your Name. Made with ❤️ from Prayagraj.</p>
-    </footer>
+<footer>
+    <p>© 2026 My Simple Website</p>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-
